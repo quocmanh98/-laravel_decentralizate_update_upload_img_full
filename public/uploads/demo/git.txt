@@ -1,0 +1,51 @@
+Step1: git init
+-> Khởi tạo (repo) nơi chứa code (thư mục Ismart) dưới local (máy tính cá nhân)
+
+Step2: git checkout -b quocmanh
+-> Tạo nhánh mới có tên là develop 
+
+Step3: comit code
+- git add fileName -> add từng file 1
+- git add . -> add tất cả các file
+- git commit -m "Message" Message chính là mô tả của chúng ta về commit này
+
+Step4: add remote
+-> Để chúng ta chỉ định đường dẫn mà chúng ta upload lên
+có nghĩa là chúng ta chỉ định add code thì chúng ta add code repo nào
+https://github.com/quocmanh98/quocmanh.git -> đây là đường link repo trên git
+- git remote add origin https://github.com/quocmanh98/quocmanh.git
+
+Step5: Push code
+git push origin login
+
+note: 
+git status
+-> xem trạng thái của repo
+On branch master (nhánh mặc định là master)
+git branch 
+-> Xem danh sách các nhánh
+git log --oneline
+-> Xem danh sách các commit
+git remote -v
+-> Xem danh sách remote
+
+-> Làm xong task
+
+task login
+muốn trở về nhánh nào -> git checkout login
+
+Các câu lệnh git cơ bản
+- git branch -d ten_nhanh -> Xóa 1 nhánh (hạn chế xóa nhánh)
+- git checkout -b ten_nhanh -> Tạo mới 1 nhánh
+- git branch -> Xem danh sách nhánh
+- git checkout ten_nhanh -> Chuyển nhánh (chuyển trạng thái cũ sang trạng thái mới)
+- git remote add ten_remote link_remote -> Thêm 1 remote
+- git add . -> add nhiều file cùng 1 lúc
+- git add fileName -> add 1 file
+- git commit -m "Nội dung message" -> Commit code (Note: Để commit code thì phải add trước)
+Code của các bạn vẫn ở localhost, nó chưa có github
+-> Chỉ khi nào các bạn 
+- git push origin ten_nhanh (Đẩy code lên nhánh hiện tại - origin là tên remote mà chúng ta đặt)
+-> thì lúc này nó ms có code trên github 
+- git pull origin ten_nhanh -> Pull code (Kéo code mới nhất về localhost) mới nhất của nhánh đó 
+
